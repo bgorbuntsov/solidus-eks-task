@@ -57,10 +57,14 @@ The AWS account that Terraform uses to create this resource must have authorized
 ECR web interface:
 Project_name -> Edit -> Source
 If you can see status ```You are connected to GitHub using OAuth```, it means that you authorised and webhook will fire on every push event.
+
 ![alt text](https://github.com/bgorbuntsov/solidus-eks-task/blob/master/img/connected.png?raw=true)
+
 4. After ECR, CodeBuild and repos are ready, you need to create images.
 It can be done be making an any commit to all repos or simply start every Build in CodeBuild web interface
+
 ![alt text](https://github.com/bgorbuntsov/solidus-eks-task/blob/master/img/start_build.png?raw=true)
+
 Building process takes some time. Be patient.
 After all images be created you may proceed to create database and cluster payload
 5. Create DB
@@ -71,7 +75,7 @@ terraform apply --auto-approve
 ```
 6. Deploy apps
 ```bash
-cd ../payload
+cd ../eks/payload
 terraform init
 terraform apply --auto-approve
 ```
