@@ -14,7 +14,7 @@ Repo consists of:
 3. Script template for environmental variables
 
 ## Prerequisites
-1. Fill ```./setvars.sh``` file provided with appropriate values and make it executable and run
+1. Fill ```./setvars.sh``` file provided with appropriate values and make it executable and run:
 ```bash
 cd eks/cluster
 chmod u+x ./setvars.sh
