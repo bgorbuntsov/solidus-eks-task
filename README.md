@@ -24,7 +24,9 @@ It will set env variables
 
 2. Install ```kubectl``` client
 
-3. Prepare apps repos
+3. Install ```mysql``` client
+
+4. Prepare apps repos
 * [scale](https://github.com/bgorbuntsov/solidus-scale)
 * [numbers](https://github.com/bgorbuntsov/solidus-numbers)
 * [names](https://github.com/bgorbuntsov/solidus-names)
