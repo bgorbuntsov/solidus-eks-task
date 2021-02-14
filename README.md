@@ -21,7 +21,9 @@ chmod u+x ./setvars.sh
 . ./setvars.sh
 ```
 It will set env variables
+
 2. Install ```kubectl``` client
+
 3. Prepare apps repos
 * [scale](https://github.com/bgorbuntsov/solidus-scale)
 * [numbers](https://github.com/bgorbuntsov/solidus-numbers)
