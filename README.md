@@ -1,5 +1,7 @@
 # EKS config
-<<image>>
+
+![alt text](https://github.com/bgorbuntsov/solidus-eks-task/blob/master/img/solidus.png?raw=true)
+
 Repo consists of:
 1. Terraform config for:
    - EKS Cluster
