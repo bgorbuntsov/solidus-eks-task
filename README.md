@@ -1,4 +1,3 @@
-# EKS config
 
 ![alt text](https://github.com/bgorbuntsov/solidus-eks-task/blob/master/img/solidus.png?raw=true)
 
