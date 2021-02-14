@@ -1,5 +1,5 @@
 
-![alt text](https://github.com/bgorbuntsov/solidus-eks-task/blob/master/img/solidus.png?raw=true)
+![schema](https://github.com/bgorbuntsov/solidus-eks-task/blob/master/img/solidus.png?raw=true)
 
 Repo consists of:
 1. Terraform config for:
@@ -65,12 +65,12 @@ ECR web interface: Project_name -> Edit -> Source
 
 If you can see status ```You are connected to GitHub using OAuth```, it means that you authorised and webhook will fire on every push event.
 
-![alt text](https://github.com/bgorbuntsov/solidus-eks-task/blob/master/img/connected.png?raw=true)
+![connected](https://github.com/bgorbuntsov/solidus-eks-task/blob/master/img/connected.png?raw=true)
 
 4. After ECR, CodeBuild and repos are ready, you need to create images.
 It can be done be making an any commit to all repos or simply start every Build in CodeBuild web interface
 
-![alt text](https://github.com/bgorbuntsov/solidus-eks-task/blob/master/img/start_build.png?raw=true)
+![start_build](https://github.com/bgorbuntsov/solidus-eks-task/blob/master/img/start_build.png?raw=true)
 
 Building process takes some time. Be patient.
 
