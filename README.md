@@ -93,7 +93,7 @@ terraform apply --auto-approve
 kubectl get svc | grep nginx-ingress-controller | grep LoadBalancer | awk '{print $4;}'
 ```
 Address returned need to be plased as CNAME for domainname which was set in setvar.sh file.
-You can also put IP address of it in your hosts file.
+You can also put IP address of the LoadBalancer in your hosts file.
 
 "http://\<domainname\>/number" - returns a random number in the response body
 
