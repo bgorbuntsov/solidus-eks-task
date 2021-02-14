@@ -80,12 +80,17 @@ cd ../eks/payload
 terraform init
 terraform apply --auto-approve
 ```
-
-Check EKS Cluster endpoint
+7. Check EKS Cluster endpoint
 ```bash
-kubectl 
-. ./setvars.sh
+kubectl get svc | grep nginx-ingress-controller | grep LoadBalancer | awk '{print $4;}'
 ```
+Address returned need to be plased as CNAME for domainname which was set in setvar.sh file.
+You can also put IP address of it in your hosts file.
 
+http://<domainname>/number - returns a random number in the response body
+http://<domainname>/name - returns a random name in the response body
+http://<domainname>/content - returns a list of customer names from DB in the
+response body
+curl -X POST -d 54 http://<domainname>/scale - loads the backend cpu to 54 percent
 
 
